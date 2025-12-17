@@ -79,7 +79,7 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
+                "gap": 0,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -139,9 +139,10 @@
                     "color": "",
                     "background": false,
                     "background_color": "#00000026",
+                    "text_color": "#000000",
                     "corner_radius": 0,
                     "padding-block-start": 0,
-                    "padding-block-end": 0,
+                    "padding-block-end": 20,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
@@ -165,9 +166,10 @@
                     "color": "var(--color-foreground)",
                     "background": false,
                     "background_color": "#00000026",
+                    "text_color": "#000000",
                     "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
+                    "padding-block-start": 20,
+                    "padding-block-end": 16,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
@@ -179,7 +181,7 @@
                     "show_sale_price_first": true,
                     "show_installments": false,
                     "show_tax_info": false,
-                    "type_preset": "custom",
+                    "type_preset": "h3",
                     "width": "100%",
                     "alignment": "left",
                     "font": "var(--font-heading--family)",
@@ -187,11 +189,38 @@
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
-                    "color": "var(--color-foreground)",
-                    "padding-block-start": 4,
-                    "padding-block-end": 0,
+                    "color": "var(--color-foreground-heading)",
+                    "padding-block-start": 16,
+                    "padding-block-end": 14,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_WJTzeA": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>EARLY BLACK FRIDAY SALE</p>",
+                    "width": "fit-content",
+                    "max_width": "narrow",
+                    "alignment": "left",
+                    "type_preset": "custom",
+                    "font": "var(--font-accent--family)",
+                    "font_size": "0.75rem",
+                    "line_height": "normal",
+                    "letter_spacing": "loose",
+                    "case": "uppercase",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": true,
+                    "background_color": "#ffffff",
+                    "text_color": "#000000",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 30,
+                    "padding-inline-end": 30
                   },
                   "blocks": {}
                 }
@@ -200,20 +229,9 @@
                 "review_hJaB3x",
                 "text_xrnftG",
                 "text_gaKk4e",
-                "price_tVjtKg"
+                "price_tVjtKg",
+                "text_WJTzeA"
               ]
-            },
-            "divider_VJhene": {
-              "type": "_divider",
-              "name": "t:names.divider",
-              "settings": {
-                "thickness": 1,
-                "corner_radius": "square",
-                "width_percent": 100,
-                "padding-block-start": 0,
-                "padding-block-end": 0
-              },
-              "blocks": {}
             },
             "variant_picker_R3rGDr": {
               "type": "variant-picker",
@@ -227,6 +245,98 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "group_e9nDQW": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "icon_pFMTLX": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "price_tag",
+                    "width": 24,
+                    "link": "",
+                    "open_in_new_tab": false
+                  },
+                  "blocks": {}
+                },
+                "icon_mLmbek": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "price_tag",
+                    "width": 24,
+                    "link": "",
+                    "open_in_new_tab": false
+                  },
+                  "blocks": {}
+                },
+                "icon_tbqBXL": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "price_tag",
+                    "width": 24,
+                    "link": "",
+                    "open_in_new_tab": false
+                  },
+                  "blocks": {}
+                },
+                "icon_gRJAmA": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "price_tag",
+                    "width": 24,
+                    "link": "",
+                    "open_in_new_tab": false
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_pFMTLX",
+                "icon_mLmbek",
+                "icon_tbqBXL",
+                "icon_gRJAmA"
+              ]
             },
             "buy_buttons_eYQEYi": {
               "type": "buy-buttons",
@@ -281,6 +391,7 @@
                 "color": "",
                 "background": false,
                 "background_color": "#00000026",
+                "text_color": "#000000",
                 "corner_radius": 0,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
@@ -292,8 +403,8 @@
           },
           "block_order": [
             "group_icgrde",
-            "divider_VJhene",
             "variant_picker_R3rGDr",
+            "group_e9nDQW",
             "buy_buttons_eYQEYi",
             "text_aEtTtq"
           ]
@@ -335,6 +446,7 @@
             "color": "",
             "background": false,
             "background_color": "#00000026",
+            "text_color": "#000000",
             "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
