@@ -62,6 +62,7 @@
       --text-align: {{ block_settings.alignment }};
     {% endif %}
     {% if block_settings.background %}
+      --text-color: {{ block_settings.text_color | default: 'rgb(0,0,0,0)' }};
       --text-background-color: {{ block_settings.background_color | default: 'rgb(255 255 255 / 1.0)' }};
       --text-corner-radius: {{ block_settings.corner_radius }}px;
       --text-padding: max(var(--padding-2xs), calc((var(--text-corner-radius) + var(--padding-xs)) * (1 - cos(45deg))));
@@ -202,6 +203,7 @@
   }
 
   .text-block--background {
+    color: var(--text-color);
     background-color: var(--text-background-color);
     border-radius: var(--text-corner-radius);
 
@@ -214,6 +216,6 @@
 
   .custom-color,
   .custom-color > :is(h1, h2, h3, h4, h5, h6, p, *) {
-    color: var(--color);
+    color: var(--text-color, var(--color));
   }
 {% endstylesheet %}

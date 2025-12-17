@@ -1,3 +1,10 @@
+.product-information .compare-at-price {
+    color: #FA0000;
+    font-size: 25px;
+    font-weight: 300;
+    opacity: 1;
+}
+
 .section-background .image-background .desktop,
 .section-background .image-background .mobile {
     position: absolute;

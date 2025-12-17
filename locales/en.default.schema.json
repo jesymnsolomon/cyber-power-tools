@@ -1112,6 +1112,7 @@
     "text": "Text",
     // Text capitalization setting for typography (uppercase/lowercase)
     "text_case": "Case",
+    "text_color": "Text Color",
     "text_hierarchy": "Text hierarchy",
     "text_label_case": "Text label case",
     "text_presets": "Text presets",
