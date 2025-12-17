@@ -219,8 +219,8 @@
                     "corner_radius": 0,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
-                    "padding-inline-start": 30,
-                    "padding-inline-end": 30
+                    "padding-inline-start": 25,
+                    "padding-inline-end": 25
                   },
                   "blocks": {}
                 }
@@ -250,9 +250,9 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
-                "content_direction": "column",
+                "content_direction": "row",
                 "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
+                "horizontal_alignment": "space-between",
                 "vertical_alignment": "center",
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
@@ -291,7 +291,9 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
-                    "width": 24,
+                    "image_upload": "shopify://shop_images/unmatched-power.png",
+                    "width": 32,
+                    "text": "Unmatched Power",
                     "link": "",
                     "open_in_new_tab": false
                   },
@@ -302,7 +304,9 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
-                    "width": 24,
+                    "image_upload": "shopify://shop_images/longer-battery-life.png",
+                    "width": 32,
+                    "text": "Longer Battery Life",
                     "link": "",
                     "open_in_new_tab": false
                   },
@@ -313,7 +317,9 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
-                    "width": 24,
+                    "image_upload": "shopify://shop_images/max-safety.png",
+                    "width": 32,
+                    "text": "Maximum Safety",
                     "link": "",
                     "open_in_new_tab": false
                   },
@@ -324,7 +330,9 @@
                   "name": "t:names.icon",
                   "settings": {
                     "icon": "price_tag",
-                    "width": 24,
+                    "image_upload": "shopify://shop_images/clamps.png",
+                    "width": 32,
+                    "text": "Patented Heavy-Duty Clamps.",
                     "link": "",
                     "open_in_new_tab": false
                   },
@@ -352,12 +360,14 @@
               "blocks": {
                 "quantity": {
                   "type": "quantity",
+                  "disabled": true,
                   "static": true,
                   "settings": {},
                   "blocks": {}
                 },
                 "add-to-cart": {
                   "type": "add-to-cart",
+                  "disabled": true,
                   "static": true,
                   "settings": {
                     "style_class": "button"
@@ -376,6 +386,7 @@
             "text_aEtTtq": {
               "type": "text",
               "name": "Product description",
+              "disabled": true,
               "settings": {
                 "text": "{{ closest.product.description }}",
                 "width": "100%",
