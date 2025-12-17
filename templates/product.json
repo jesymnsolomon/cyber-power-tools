@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "main": {
       "type": "product-information",
@@ -24,7 +25,8 @@
             "slideshow_mobile_controls_style": "dots",
             "thumbnail_position": "right",
             "thumbnail_width": 44,
-            "aspect_ratio": "adapt",
+            "thumbnail_radius": 0,
+            "aspect_ratio": "1",
             "constrain_to_viewport": true,
             "media_fit": "contain",
             "media_radius": 0,
@@ -70,7 +72,6 @@
               "type": "group",
               "name": "Header",
               "settings": {
-                "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -98,12 +99,28 @@
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {
+                "review_hJaB3x": {
+                  "type": "review",
+                  "name": "t:names.product_review_stars",
+                  "settings": {
+                    "stars_style": "shaded",
+                    "show_number": true,
+                    "rating_color": "primary",
+                    "type_preset": "paragraph",
+                    "width": "100%",
+                    "alignment": "left"
+                  },
+                  "blocks": {}
+                },
                 "text_xrnftG": {
                   "type": "text",
                   "name": "Product title",
@@ -112,7 +129,7 @@
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "h3",
+                    "type_preset": "h2",
                     "font": "var(--font-primary--family)",
                     "font_size": "",
                     "line_height": "normal",
@@ -130,17 +147,43 @@
                   },
                   "blocks": {}
                 },
+                "text_gaKk4e": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>It starts gasoline and diesel engines up to 8.0L with ease. Safer, longer-lasting, and more reliable than ordinary lithium packs, it’s designed for real drivers, not just flashy numbers.</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "custom",
+                    "font": "var(--font-subheading--family)",
+                    "font_size": "1.5rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
                 "price_tVjtKg": {
                   "type": "price",
                   "settings": {
                     "show_sale_price_first": true,
                     "show_installments": false,
                     "show_tax_info": false,
-                    "type_preset": "paragraph",
+                    "type_preset": "custom",
                     "width": "100%",
                     "alignment": "left",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
+                    "font": "var(--font-heading--family)",
+                    "font_size": "2.5rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -154,7 +197,9 @@
                 }
               },
               "block_order": [
+                "review_hJaB3x",
                 "text_xrnftG",
+                "text_gaKk4e",
                 "price_tVjtKg"
               ]
             },
@@ -188,6 +233,7 @@
               "settings": {
                 "stacking": true,
                 "show_pickup_availability": false,
+                "gift_card_form": true,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -253,14 +299,18 @@
           ]
         }
       },
+      "custom_css": [],
       "settings": {
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
-        "equal_columns": false,
+        "equal_columns": true,
         "limit_details_width": false,
         "gap": 48,
-        "color_scheme": "",
-        "padding-block-start": 0,
+        "enable_sticky_add_to_cart": true,
+        "color_scheme": "scheme-5",
+        "bg_image": "shopify://shop_images/Desktop_BG-new.png",
+        "bg_image_mobile": "shopify://shop_images/Mobile_BG.png",
+        "padding-block-start": 40,
         "padding-block-end": 0
       }
     },
