@@ -76,7 +76,16 @@
   endcase
 %}
 
-<div class="section-background color-{{ settings.color_scheme }}"></div>
+<div class="section-background color-{{ settings.color_scheme }}">
+  {% comment %} Section Background  {% endcomment %}
+  {% if settings.bg_image != blank and settings.bg_image_mobile != blank %}
+    <div class="image-background">
+      <div class="desktop" style="background-image: url({{ settings.bg_image | img_url: '1600x' }})"></div>
+      <div class="mobile" style="background-image: url({{ settings.bg_image_mobile | img_url: '768x' }})"></div>
+    </div>
+  {% endif %}
+  {% comment %} End of Section Background  {% endcomment %}
+</div>
 <div
   class="product-information section section--{{ content_width }} spacing-style color-{{ settings.color_scheme }} relative"
   style="{% render 'spacing-style', settings: settings %} --gap: {{ settings.gap }}px;"

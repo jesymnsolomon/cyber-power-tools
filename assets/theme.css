@@ -1,0 +1,25 @@
+.section-background .image-background .desktop,
+.section-background .image-background .mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-background .desktop {
+    display: none;
+}
+
+/* Desktop screens */
+@media screen and (min-width: 768px) {
+  .section-background .mobile {
+    display: none;   /* Hide on desktop */
+  }
+  .section-background .desktop {
+    display: block;  /* Show on desktop */
+  }
+}

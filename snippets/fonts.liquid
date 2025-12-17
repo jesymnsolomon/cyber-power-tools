@@ -1,4 +1,13 @@
 {% # theme-check-disable %}
+{% comment %} custom fonts {% endcomment %}
+<link
+  rel="preload"
+  href="https://cdn.jsdelivr.net/gh/jesymnsolomon/cyber-power-tools@a8c916c73b8db56ec9e9a0df5ec8beb32d00b1c5/assets/Messapia-Bold.otf"
+  as="font"
+  type="font/otf"
+  crossorigin
+>
+
 {%- unless settings.type_body_font.system? -%}
   <link
     rel="preload"
