@@ -1,8 +1,33 @@
+.shopify-payment-button button {
+    font-weight: 600;
+}
+
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.icon-text img {
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.product-information .text-block + .text-block--background p {
+    letter-spacing: 2px;
+}
+
 .product-information .compare-at-price {
     color: #FA0000;
     font-size: 25px;
     font-weight: 300;
     opacity: 1;
+}
+
+.product-information .shopify-payment-button__button {
+    content: 'Order Now';
 }
 
 .section-background .image-background .desktop,
@@ -28,5 +53,46 @@
   }
   .section-background .desktop {
     display: block;  /* Show on desktop */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .icon-text img {
+    margin-bottom: 10px;
+  }
+
+  .product-information .text-block.h2 h1,
+  .product-information .text-block.custom-typography p {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .product-information .text-block + .text-block--background p {
+    font-size: 12px;
+  }
+
+  .product-information .text-block.custom-typography:not(.text-block--background) {
+    padding: 0;
+  }
+
+  .product-information .text-block,
+  .product-information .text-block div {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .product-information .group-block-content.mobile-column {
+    flex-flow: row wrap;
+  }
+
+  .product-information .group-block-content.mobile-column .icon-block {
+    min-width: calc(50% - 6px);
+    max-width: calc(50% - 6px);
+  }
+
+  .product-information .group-block-content.mobile-column .icon-block span {
+    font-size: 16px;
+    text-align: center;
   }
 }

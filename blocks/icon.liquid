@@ -22,7 +22,16 @@
     {% endif %}
   >
     {{ icon }}
+
+    {% if block_settings.text != blank %}
+      <span>{{ block_settings.text }}</span>
+    {% endif %}
   </a>
+{%- elsif block_settings.text != blank -%}
+  <div class="icon-text">
+    {{ icon }}
+    <span>{{ block_settings.text }}</span>
+  </div>
 {%- else -%}
   {{ icon }}
 {%- endif -%}
@@ -301,6 +310,11 @@
       "step": 2,
       "unit": "px",
       "default": 24
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "t:settings.text"
     },
     {
       "type": "url",

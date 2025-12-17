@@ -32,6 +32,7 @@
   %}
 
   {% assign image_style = 'width: ' | append: width | append: 'px;' %}
+  {% assign image_style = image_style |  append: 'height: ' |  append: width | append: 'px;' %}
   {{
     image_upload
     | image_url: width: 1200
