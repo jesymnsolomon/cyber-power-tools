@@ -76,6 +76,7 @@
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
+                "wrap": "wrap",
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
@@ -254,6 +255,7 @@
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "space-between",
                 "vertical_alignment": "center",
+                "wrap": "wrap",
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
@@ -294,6 +296,7 @@
                     "image_upload": "shopify://shop_images/unmatched-power.png",
                     "width": 32,
                     "text": "Unmatched Power",
+                    "position": "top",
                     "link": "",
                     "open_in_new_tab": false
                   },
@@ -307,6 +310,7 @@
                     "image_upload": "shopify://shop_images/longer-battery-life.png",
                     "width": 32,
                     "text": "Longer Battery Life",
+                    "position": "top",
                     "link": "",
                     "open_in_new_tab": false
                   },
@@ -320,6 +324,7 @@
                     "image_upload": "shopify://shop_images/max-safety.png",
                     "width": 32,
                     "text": "Maximum Safety",
+                    "position": "top",
                     "link": "",
                     "open_in_new_tab": false
                   },
@@ -333,6 +338,7 @@
                     "image_upload": "shopify://shop_images/clamps.png",
                     "width": 32,
                     "text": "Patented Heavy-Duty Clamps.",
+                    "position": "top",
                     "link": "",
                     "open_in_new_tab": false
                   },
@@ -383,6 +389,96 @@
               },
               "block_order": []
             },
+            "group_C3gUAY": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "row",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "center",
+                "vertical_alignment": "center",
+                "wrap": "nowrap",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 10,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "icon_AX4zyH": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "price_tag",
+                    "image_upload": "shopify://shop_images/lucide_circle-check-big_238e0a8d-61ea-4880-9500-2820b9902666.svg",
+                    "width": 24,
+                    "text": "60-Day Risk-Free Guarantee",
+                    "position": "left",
+                    "link": "",
+                    "open_in_new_tab": false
+                  },
+                  "blocks": {}
+                },
+                "icon_9cx7Rb": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "price_tag",
+                    "image_upload": "shopify://shop_images/lucide_circle-check-big_238e0a8d-61ea-4880-9500-2820b9902666.svg",
+                    "width": 24,
+                    "text": "Free Shipping",
+                    "position": "left",
+                    "link": "",
+                    "open_in_new_tab": false
+                  },
+                  "blocks": {}
+                },
+                "icon_VaeNjz": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "price_tag",
+                    "image_upload": "shopify://shop_images/lucide_circle-check-big_238e0a8d-61ea-4880-9500-2820b9902666.svg",
+                    "width": 24,
+                    "text": "1 year warranty",
+                    "position": "left",
+                    "link": "",
+                    "open_in_new_tab": false
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "icon_AX4zyH",
+                "icon_9cx7Rb",
+                "icon_VaeNjz"
+              ]
+            },
             "text_aEtTtq": {
               "type": "text",
               "name": "Product description",
@@ -417,6 +513,7 @@
             "variant_picker_R3rGDr",
             "group_e9nDQW",
             "buy_buttons_eYQEYi",
+            "group_C3gUAY",
             "text_aEtTtq"
           ]
         }
@@ -434,6 +531,429 @@
         "bg_image_mobile": "shopify://shop_images/Mobile_BG.png",
         "padding-block-start": 40,
         "padding-block-end": 0
+      }
+    },
+    "section_gdtPgV": {
+      "type": "section",
+      "blocks": {
+        "group_HfAci4": {
+          "type": "group",
+          "name": "t:names.column",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "wrap": "wrap",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 8,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "accordion_B3kdzg": {
+              "type": "accordion",
+              "name": "t:names.accordion",
+              "settings": {
+                "icon": "caret",
+                "dividers": true,
+                "type_preset": "h6",
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "accordion_row_hA9jGR": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Details",
+                    "open_by_default": true,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "accordion_row_item_EKQRij": {
+                      "type": "_accordion-row-item",
+                      "name": "Accordion Row Item",
+                      "settings": {
+                        "label": "Capacity",
+                        "value": "20,000mAh / 74Wh (LiFePO₄)"
+                      },
+                      "blocks": {}
+                    },
+                    "accordion_row_item_jxjcEE": {
+                      "type": "_accordion-row-item",
+                      "name": "Accordion Row Item",
+                      "settings": {
+                        "label": "Starting / Peak Current",
+                        "value": "1500A / 3000A"
+                      },
+                      "blocks": {}
+                    },
+                    "accordion_row_item_RUDABz": {
+                      "type": "_accordion-row-item",
+                      "name": "Accordion Row Item",
+                      "settings": {
+                        "label": "Supported Engines",
+                        "value": "Up to 8.0L gas / 8.0L diesel"
+                      },
+                      "blocks": {}
+                    },
+                    "accordion_row_item_KMgbDB": {
+                      "type": "_accordion-row-item",
+                      "name": "Accordion Row Item",
+                      "settings": {
+                        "label": "Cycle Life",
+                        "value": "≥1,000 cycles"
+                      },
+                      "blocks": {}
+                    },
+                    "accordion_row_item_BwJTXD": {
+                      "type": "_accordion-row-item",
+                      "name": "Accordion Row Item",
+                      "settings": {
+                        "label": "Outputs",
+                        "value": " USB-A QC (18W), USB-A 5V/2.4A"
+                      },
+                      "blocks": {}
+                    },
+                    "accordion_row_item_fq46ny": {
+                      "type": "_accordion-row-item",
+                      "name": "Accordion Row Item",
+                      "settings": {
+                        "label": "Input",
+                        "value": "USB-C 5V/3A"
+                      },
+                      "blocks": {}
+                    },
+                    "accordion_row_item_FQWTpi": {
+                      "type": "_accordion-row-item",
+                      "name": "Accordion Row Item",
+                      "settings": {
+                        "label": "Lighting Modes",
+                        "value": "Spotlight, floodlight, red light, SOS, high/low beam"
+                      },
+                      "blocks": {}
+                    },
+                    "accordion_row_item_gH3GX7": {
+                      "type": "_accordion-row-item",
+                      "name": "Accordion Row Item",
+                      "settings": {
+                        "label": "Standby Time",
+                        "value": "over 12 months"
+                      },
+                      "blocks": {}
+                    },
+                    "accordion_row_item_qAPVGQ": {
+                      "type": "_accordion-row-item",
+                      "name": "Accordion Row Item",
+                      "settings": {
+                        "label": "Working Temp",
+                        "value": "-20°C to 60°C"
+                      },
+                      "blocks": {}
+                    },
+                    "accordion_row_item_a6aTWE": {
+                      "type": "_accordion-row-item",
+                      "name": "Accordion Row Item",
+                      "settings": {
+                        "label": "Size",
+                        "value": "186 × 87 × 52 mm"
+                      },
+                      "blocks": {}
+                    },
+                    "accordion_row_item_Q39zbT": {
+                      "type": "_accordion-row-item",
+                      "name": "Accordion Row Item",
+                      "settings": {
+                        "label": "Standby Time",
+                        "value": "over 12 months"
+                      },
+                      "blocks": {}
+                    },
+                    "accordion_row_item_ctUga6": {
+                      "type": "_accordion-row-item",
+                      "name": "Accordion Row Item",
+                      "settings": {
+                        "label": "Weight",
+                        "value": "720g"
+                      },
+                      "blocks": {}
+                    },
+                    "accordion_row_item_HA3iQ3": {
+                      "type": "_accordion-row-item",
+                      "name": "Accordion Row Item",
+                      "settings": {
+                        "label": "Clamp Length",
+                        "value": "4ft heavy-duty detachable clamps"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "accordion_row_item_EKQRij",
+                    "accordion_row_item_jxjcEE",
+                    "accordion_row_item_RUDABz",
+                    "accordion_row_item_KMgbDB",
+                    "accordion_row_item_BwJTXD",
+                    "accordion_row_item_fq46ny",
+                    "accordion_row_item_FQWTpi",
+                    "accordion_row_item_gH3GX7",
+                    "accordion_row_item_qAPVGQ",
+                    "accordion_row_item_a6aTWE",
+                    "accordion_row_item_Q39zbT",
+                    "accordion_row_item_ctUga6",
+                    "accordion_row_item_HA3iQ3"
+                  ]
+                }
+              },
+              "block_order": [
+                "accordion_row_hA9jGR"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_B3kdzg"
+          ]
+        },
+        "group_P6Pwep": {
+          "type": "group",
+          "name": "t:names.column",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "wrap": "wrap",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 8,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 10,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "accordion_hTiUKY": {
+              "type": "accordion",
+              "name": "t:names.accordion",
+              "settings": {
+                "icon": "caret",
+                "dividers": true,
+                "type_preset": "h6",
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "accordion_row_tbdcw7": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "What’s in the box",
+                    "open_by_default": true,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "icon_R79feh": {
+                      "type": "icon",
+                      "name": "t:names.icon",
+                      "settings": {
+                        "icon": "price_tag",
+                        "image_upload": "shopify://shop_images/check.svg",
+                        "width": 16,
+                        "text": "CyberTools PowerX Jump Starter host unit",
+                        "position": "left",
+                        "link": "",
+                        "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "icon_49bRt9": {
+                      "type": "icon",
+                      "name": "t:names.icon",
+                      "settings": {
+                        "icon": "price_tag",
+                        "image_upload": "shopify://shop_images/check.svg",
+                        "width": 16,
+                        "text": "Heavy-duty detachable clamps",
+                        "position": "left",
+                        "link": "",
+                        "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "icon_DhGded": {
+                      "type": "icon",
+                      "name": "t:names.icon",
+                      "settings": {
+                        "icon": "price_tag",
+                        "image_upload": "shopify://shop_images/check.svg",
+                        "width": 16,
+                        "text": "USB-C charging cable",
+                        "position": "left",
+                        "link": "",
+                        "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "icon_Mejrgw": {
+                      "type": "icon",
+                      "name": "t:names.icon",
+                      "settings": {
+                        "icon": "price_tag",
+                        "image_upload": "shopify://shop_images/check.svg",
+                        "width": 16,
+                        "text": "EVA heat-pressed storage bag",
+                        "position": "left",
+                        "link": "",
+                        "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "icon_TaDpJ9": {
+                      "type": "icon",
+                      "name": "t:names.icon",
+                      "settings": {
+                        "icon": "price_tag",
+                        "image_upload": "shopify://shop_images/check.svg",
+                        "width": 16,
+                        "text": "Color box",
+                        "position": "left",
+                        "link": "",
+                        "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    },
+                    "icon_MRL3Bc": {
+                      "type": "icon",
+                      "name": "t:names.icon",
+                      "settings": {
+                        "icon": "price_tag",
+                        "image_upload": "shopify://shop_images/check.svg",
+                        "width": 16,
+                        "text": "User manual",
+                        "position": "left",
+                        "link": "",
+                        "open_in_new_tab": false
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "icon_R79feh",
+                    "icon_49bRt9",
+                    "icon_DhGded",
+                    "icon_Mejrgw",
+                    "icon_TaDpJ9",
+                    "icon_MRL3Bc"
+                  ]
+                }
+              },
+              "block_order": [
+                "accordion_row_tbdcw7"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_hTiUKY"
+          ]
+        }
+      },
+      "block_order": [
+        "group_HfAci4",
+        "group_P6Pwep"
+      ],
+      "name": "t:names.multicolumn",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "flex-start",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-2",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 48,
+        "padding-block-end": 48
       }
     },
     "product_recommendations_qggXJq": {
@@ -581,6 +1101,7 @@
   },
   "order": [
     "main",
+    "section_gdtPgV",
     "product_recommendations_qggXJq"
   ]
 }
