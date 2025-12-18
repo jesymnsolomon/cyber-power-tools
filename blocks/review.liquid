@@ -3,9 +3,12 @@
 {% liquid
   assign block_settings = block.settings
   assign product = closest.product
-  assign rating = product.metafields.reviews.rating.value.rating
-  assign scale_max = product.metafields.reviews.rating.value.scale_max
-  assign rating_count = product.metafields.reviews.rating_count
+  assign default_rating = block_settings.default_rating
+  assign default_count = block_settings.default_count
+  assign default_scale_max = block_settings.default_scale_max
+  assign rating = product.metafields.reviews.rating.value.rating | default: default_rating
+  assign scale_max = product.metafields.reviews.rating.value.scale_max | default: default_scale_max
+  assign rating_count = product.metafields.reviews.rating_count | default: default_count
 
   if request.visual_preview_mode and product == blank
     assign product = collections.all.products.first
@@ -96,8 +99,8 @@
           <span class="rating-count-separator">|</span>
         {%- endif -%}
         {%- if block_settings.show_number -%}
-          {{- rating_count }}
-          {{ 'content.reviews' | t }}
+          ({{- rating_count }}+
+          {{ 'content.reviews' | t }})
         {%- endif -%}
       </p>
     {%- endif -%}
@@ -171,6 +174,25 @@
     {
       "type": "paragraph",
       "content": "t:content.app_required_for_ratings"
+    },
+    {
+      "type": "header",
+      "content": "Default Values"
+    },
+    {
+      "type": "text",
+      "label": "Count",
+      "id": "default_count"
+    },
+      {
+      "type": "text",
+      "label": "Scale Max",
+      "id": "default_scale_max"
+    },
+    {
+      "type": "text",
+      "label": "Rating",
+      "id": "default_rating"
     },
     {
       "type": "select",
