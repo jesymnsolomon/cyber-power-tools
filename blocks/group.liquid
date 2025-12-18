@@ -96,6 +96,15 @@
       "visible_if": "{{ block.settings.content_direction == 'row' }}"
     },
     {
+      "type": "select",
+      "id": "wrap",
+      "label": "Wrap on overflow",
+      "options": [
+        { "value": "wrap", "label": "Wrap" },
+        { "value": "nowrap", "label": "No Wrap" }
+      ]
+    },
+    {
       "type": "checkbox",
       "id": "align_baseline",
       "label": "t:settings.align_baseline",

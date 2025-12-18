@@ -28,7 +28,7 @@
     {% endif %}
   </a>
 {%- elsif block_settings.text != blank -%}
-  <div class="icon-text">
+  <div class="icon-text icon-text--{{ block_settings.position }}">
     {{ icon }}
     <span>{{ block_settings.text }}</span>
   </div>
@@ -315,6 +315,16 @@
       "type": "text",
       "id": "text",
       "label": "t:settings.text"
+    },
+    {
+      "type": "select",
+      "id": "position",
+      "label": "Icon Position",
+      "options": [
+        { "value": "top", "label": "Top"},
+        { "value": "left", "label": "Left"}
+      ],
+      "visible_if": "{{ block.settings.text != blank }}"
     },
     {
       "type": "url",

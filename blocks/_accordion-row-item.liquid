@@ -1,0 +1,36 @@
+
+{% assign block_settings = block.settings %}
+
+<div class="accordion-row__item">
+  <div class="accordion-row__item-label">
+    {{ block_settings.label }}
+  </div>
+  <div class="accordion-row__item-value">
+    {{ block_settings.value }}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Accordion Row Item",
+  "blocks": [
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Label",
+    },
+    {
+      "type": "text",
+      "id": "value",
+      "label": "Value"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Accordion Row Item"
+    }
+  ]
+}
+{% endschema %}
