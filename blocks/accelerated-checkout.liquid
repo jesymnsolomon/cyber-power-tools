@@ -22,6 +22,8 @@
   if request.visual_preview_mode and product == blank
     assign product = collections.all.products.first
   endif
+
+  assign button_label = block.settings.button_label | default: 'Buy Now'
 %}
 
 {% if accelerated_checkout_button != blank %}
@@ -39,6 +41,18 @@
     {{ accelerated_checkout_button }}
   </div>
 {% endif %}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const paymentButton = document.querySelector(
+      ".shopify-payment-button__button"
+    );
+
+    if (paymentButton) {
+      paymentButton.textContent = "{{ button_label }}";
+    }
+  });
+</script>
 
 {% stylesheet %}
   .accelerated-checkout-block[data-shopify-visual-preview] {
@@ -65,6 +79,13 @@
 {% schema %}
 {
   "name": "t:names.accelerated_checkout",
-  "tag": null
+  "tag": null,
+  "settings": [
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    }
+  ]
 }
 {% endschema %}

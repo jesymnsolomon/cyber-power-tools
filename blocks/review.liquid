@@ -98,9 +98,12 @@
         {%- if block_settings.stars_style == 'single' and block_settings.show_number -%}
           <span class="rating-count-separator">|</span>
         {%- endif -%}
-        {%- if block_settings.show_number -%}
+
+        {%- if block_settings.show_label and block_settings.show_number -%}
           ({{- rating_count }}+
           {{ 'content.reviews' | t }})
+        {%-  elsif block_settings.show_number -%}
+          {{- rating_count |  times: 1.0 }}
         {%- endif -%}
       </p>
     {%- endif -%}
@@ -218,6 +221,12 @@
       "type": "checkbox",
       "id": "show_number",
       "label": "t:settings.review_count",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_label",
+      "label": "Review Label",
       "default": true
     },
     {

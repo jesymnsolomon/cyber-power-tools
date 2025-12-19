@@ -27,6 +27,39 @@
   justify-content: flex-start;
 }
 
+.group-block-content:has(.card) {
+    display: flex;
+}
+
+.group-block-content:has(.card) .card {
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.group-block-content:has(.card) p {
+    text-align: left;
+}
+
+.group-block-content:has(.card) .card .icon-block {
+    margin-top: 20px;
+}
+
+.group-block-content:has(.card) .card,
+.group-block-content:has(.card) .card .rating-wrapper p  {
+    font-weight: 600;
+}
+
+.group-block-content:has(.card) .card .rating-wrapper {
+    margin-bottom: 10px;
+}
+
+.group-block-content:has(.card) .card .rating-wrapper svg {
+    height: 15px;
+    width: 15px;
+}
+
 .accordion summary.details__header {
   font-weight: 600;
   text-transform: uppercase;
@@ -52,7 +85,7 @@
   font-size: 16px;
 }
 
-.product-information .rating svg {
+.rating svg {
   color: #ffea00;
   fill: #ffea00;
   margin: 0 2px;
@@ -178,6 +211,15 @@ button,
     padding: 0;
   }
 
+  .product-information .rating-wrapper {
+    justify-content: center;
+  }
+
+  .product-information .text-block h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
   .product-information .text-block,
   .product-information .text-block div {
     text-align: center;
@@ -239,6 +281,7 @@ button,
   /* Section Specific  */
   #shopify-section-template--25267185680699__section_4yzgct .layout-panel-flex--row {
     flex-flow: row wrap !important;
+    gap: 20px;
   }
 
   #shopify-section-template--25267185680699__section_4yzgct .size-style {
